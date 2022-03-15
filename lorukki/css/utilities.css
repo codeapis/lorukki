@@ -1,0 +1,285 @@
+/* --------------------------------------------------- */
+/* This the utilities  */
+
+/* set the container that wides has selected range, and not following whole web page few and its will turn responsiveness */
+/* to make clean point when you stretch the window */
+/* and margin zero auto will be set for automatically respons to wide range of webpage */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  /* fixing the margin10px by headings above, so this container has no margin */
+  overflow: auto;
+  /* set the padding so they have space within its container, and to push left and right */
+  padding: 0 40px;
+}
+
+/* setup the card class */
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  /* create box shadow with 0 margin 3px wide and 10px blur, the the color with rgba opa 0.2 */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+/* styling the button */
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+
+/* setup the hover effect on button */
+.btn:hover {
+  transform: scale(0.98);
+}
+
+/* adding bg primary */
+/* Backgrounds & Coloured buttons */
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+/* targeting a link on footer into white color  */
+
+.bg-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: #333;
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
+}
+
+/* Text Colors */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+/* targeting a link on footer into white color  */
+
+.text-light {
+  color: var(--light-color);
+}
+
+/* Text Sizes  */
+.lead {
+  /* will change the paragraph font size */
+  font-size: 20px;
+}
+
+/* then for small medium */
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Alert setup */
+.alert {
+  background-color: var(--light-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  /* setup margin for separet from everything else with 15px on the top and bottom */
+  margin: 15px 0;
+}
+
+.alert i {
+  /* creeate space between alert icon and the text */
+  margin-right: 10px;
+}
+
+.alert-success {
+  background-color: var(--success-color);
+  color: #fff;
+}
+
+.alert-error {
+  background-color: var(--error-color);
+  color: #fff;
+}
+
+/* setup the container and navbar into flexbox so we could easily manage them into flex items & grid with desire direction */
+/* add the utility class flex on the html beside container, so it will manage navbar using flexbox */
+.flex {
+  /* this display flex will turn items into colom */
+  display: flex;
+  /* to ensure webname and navbar separately arrange */
+  /* justify-content using space between to make the both item separately position themself on each start and ends of the container */
+  justify-content: center;
+  align-items: center;
+  /* make sure the height turn into 100% of whatever the container is */
+  height: 100%;
+}
+
+/* Create a grid to align side by side on the Showcase model */
+.grid {
+  display: grid;
+  /* setup how wide we wanna setup the grid colum inside one row, and set the wide using fraction (Fr) instead, like the percentage inside the container*/
+  grid-template-columns: repeat(2, 1fr);
+  /* because the initial fraction on grid doesnt have a space, we add gap in it */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Grid-3 was to set the stats grid into 3 colom instead 2 */
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Margin */
+.my-1 {
+  /* rem is the multiplier root element for font size*/
+  margin: 1rem 0;
+}
+
+.my-2 {
+  /* rem is the multiplier root element for font size*/
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  /* rem is the multiplier root element for font size*/
+  margin: 2rem 0;
+}
+
+.my-4 {
+  /* rem is the multiplier root element for font size*/
+  margin: 3rem 0;
+}
+
+.my-5 {
+  /* rem is the multiplier root element for font size*/
+  margin: 4rem 0;
+}
+
+.m-1 {
+  /* rem is the multiplier root element for font size*/
+  margin: 1rem;
+}
+
+.m-2 {
+  /* rem is the multiplier root element for font size*/
+  margin: 1.5rem;
+}
+
+.m-3 {
+  /* rem is the multiplier root element for font size*/
+  margin: 2rem;
+}
+
+.m-4 {
+  /* rem is the multiplier root element for font size*/
+  margin: 3rem;
+}
+
+.m-5 {
+  /* rem is the multiplier root element for font size*/
+  margin: 4rem 0;
+}
+
+/* Padding */
+.py-1 {
+  /* rem is the multiplier root element for font size*/
+  padding: 1rem 0;
+}
+
+.py-2 {
+  /* rem is the multiplier root element for font size*/
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  /* rem is the multiplier root element for font size*/
+  padding: 2rem 0;
+}
+
+.py-4 {
+  /* rem is the multiplier root element for font size*/
+  padding: 3rem 0;
+}
+
+.py-5 {
+  /* rem is the multiplier root element for font size*/
+  padding: 4rem 0;
+}
+
+.p-1 {
+  /* rem is the multiplier root element for font size*/
+  padding: 1rem;
+}
+
+.p-2 {
+  /* rem is the multiplier root element for font size*/
+  padding: 1.5rem;
+}
+
+.p-3 {
+  /* rem is the multiplier root element for font size*/
+  padding: 2rem;
+}
+
+.p-4 {
+  /* rem is the multiplier root element for font size*/
+  padding: 3rem;
+}
+
+.p-5 {
+  /* rem is the multiplier root element for font size*/
+  padding: 4rem;
+}
